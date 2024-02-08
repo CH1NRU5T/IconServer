@@ -1,7 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useSelector } from "react-redux";
 
-function ProjectCard({ project, icon }) {
+function ProjectCard({ project }) {
+  let icon = useSelector((state) => state.icon);
   return (
     <div className="flex border my-4 border-white flex-row hover:bg-gray-900 cursor-pointer rounded-xl">
       <div className="flex flex-col w-full">
