@@ -22,10 +22,11 @@ function ProjectSearch() {
     dispatch(clearProjects());
 
     const getDebouncingData = setTimeout(() => {
-      dispatch(fetchIconsAndProjects(prompt));
+      promise = dispatch(fetchIconsAndProjects(prompt));
     }, 2000);
     return () => {
       clearTimeout(getDebouncingData);
+      promise?.abort();
     };
   }, [prompt]);
 
