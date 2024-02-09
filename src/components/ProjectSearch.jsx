@@ -34,6 +34,7 @@ function ProjectSearch() {
     <div className="border px-2 py-1.5 rounded-xl flex flex-row items-center justify-between mb-4 h-14">
       <input
         type="text"
+        placeholder="Write your thoughts here..."
         value={prompt}
         onChange={(e) => {
           setPrompt(e.target.value);
@@ -45,7 +46,7 @@ function ProjectSearch() {
       >
         <FontAwesomeIcon
           icon={icon.icon}
-          className={`text-black w-5 h-4 ${icon.loading ? "animate-spin" : ""}`}
+          className={`text-white w-5 h-4 ${icon.loading ? "animate-spin" : ""}`}
         />
       </div>
     </div>

@@ -3,9 +3,9 @@ import axios from "axios";
 const INITIAL_ICON = "fas fa-magnifying-glass";
 const LOADING_ICON = "fas fa-spinner";
 const ERROR_ICON = "fas fa-exclamation-triangle";
-const INITIAL_COLOR = "bg-gray-200";
+const INITIAL_COLOR = "bg-gray-600";
 const ERROR_COLOR = "bg-red-400";
-const SUCCESS_COLOR = "bg-green-400";
+const SUCCESS_COLOR = "bg-green-600";
 export const fetchIconsAndProjects = createAsyncThunk(
   "fetchIconsAndProjects",
   async (query) => {
